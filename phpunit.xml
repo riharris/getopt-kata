@@ -1,0 +1,12 @@
+<phpunit bootstrap="test/_bootstrap.php" colors="true" stopOnError="false" stopOnFailure="false">
+    <php>
+        <ini name="display_errors" value="On"/>
+        <ini name="display_startup_errors" value="On"/>
+        <ini name="error_reporting" value="E_ALL"/>
+    </php>
+    <testsuites>
+        <testsuite name="unit-tests">
+            <directory suffix="Test.php">test</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
